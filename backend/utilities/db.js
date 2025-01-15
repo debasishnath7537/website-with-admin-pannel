@@ -2,16 +2,16 @@
 import mongoose from "mongoose";
 
 // const URI = "mongodb://127.0.0.1:27017/adminBoard";
-const URI =
-  "mongodb+srv://dnath7537:unA9ZPyOiGcp9rd9@clustertest.p4sio.mongodb.net/adminDB?retryWrites=true&w=majority&appName=ClusterTest";
+// const URI =
+//   "mongodb+srv://dnath7537:unA9ZPyOiGcp9rd9@clustertest.p4sio.mongodb.net/adminDB?retryWrites=true&w=majority&appName=ClusterTest";
 
-// import dotenv from "dotenv";
+import dotenv from "dotenv";
 
-// // Load environment variables
-// dotenv.config();
+// Load environment variables
+dotenv.config();
 
-// // Use the environment variable for the URI
-// const URI = process.env.MONGO_URI;
+// Use the environment variable for the URI
+const URI = process.env.MONGO_URI;
 const connectDb = async () => {
   try {
     await mongoose.connect(URI);
