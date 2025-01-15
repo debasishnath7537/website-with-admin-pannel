@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 const corsOptions = {
   // origin: "http://localhost:5173",
-  origin: "https://webappwithadminpanel.netlify.app/",
+  origin: "https://fascinating-cat-a58c4b.netlify.app",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
