@@ -24,10 +24,11 @@ app.use("/api/data", serviceRouter);
 
 app.use("/api/admin", adminRouter);
 // app.use("/api/admin", adminRouter);
+const port = process.env.PORT || 5000;
 
 app.use(errorMiddleware);
 connectDb().then(() => {
-  app.listen(5000, () => {
+  app.listen(port, () => {
     console.log("Serving is running on Port 5000");
   });
 });
