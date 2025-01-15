@@ -1,5 +1,3 @@
-import * as dotenv from "dotenv";
-dotenv.config();
 import express from "express";
 import cors from "cors";
 import authRouter from "./router/auth-router.js";
@@ -8,6 +6,8 @@ import serviceRouter from "./router/service-router.js";
 import adminRouter from "./router/admin-router.js";
 import connectDb from "./utilities/db.js";
 import errorMiddleware from "./middleware-validate/error-middleware.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 const corsOptions = {
