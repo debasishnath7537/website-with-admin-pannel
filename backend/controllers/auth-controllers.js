@@ -1,5 +1,5 @@
 import User from "../models/user-models.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 export const home = (req, res) => {
   return res.send("homeeee");
